@@ -432,8 +432,8 @@ if (typeof module != "undefined") {
 <style>
 :root{--navy:#1B2D4F;--red:#C0392B;--gold:#D4A017;--bg-page:#CDD3DE;--border:#B8C4D4;--muted:#556070;--light:#F4F6FA;--fh:"Space Grotesk",system-ui,sans-serif;--fb:"Inter",system-ui,sans-serif}
 *{box-sizing:border-box}
-body{background:var(--bg-page);color:#1A1A1A;font-family:var(--fb);font-size:15px;line-height:1.65;margin:0;padding-block:20px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-@page{size:A4;margin:0}
+body{background:var(--bg-page);color:#1A1A1A;font-family:var(--fb);font-size:16px;line-height:1.65;margin:0;padding-block:20px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@page{size:A4;margin:3mm}
 .a4{background:white;width:794px;max-width:100%;margin:0 auto 24px;box-shadow:0 4px 32px rgba(0,0,0,.2);display:flex;flex-direction:column}
 /* ── Full header (page 1) ── */
 .hdr{background:var(--navy);padding:14px 20px;display:flex;align-items:center;gap:14px}
@@ -468,49 +468,49 @@ body{background:var(--bg-page);color:#1A1A1A;font-family:var(--fb);font-size:15p
 .sh-l{flex:1;border-bottom:1.5px solid var(--navy);opacity:.3}
 /* ── Labels + text ── */
 .ilbl{font-family:var(--fh);font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--navy);margin:0 0 4px}
-.itxt{font-size:14.5px;color:#333;margin:0 0 12px;line-height:1.65}
+.itxt{font-size:16px;color:#333;margin:0 0 12px;line-height:1.65}
 /* ── Form fields ── */
-.fg{margin-bottom:14px}
+.fg{margin-bottom:18px}
 .fl{font-family:var(--fh);font-size:9.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:4px}
-.fi{display:block;width:100%;border:none;border-bottom:1px solid #9AAABB;min-height:25px;padding-bottom:3px}
+.fi{display:block;width:100%;border:none;border-bottom:1px solid #9AAABB;min-height:30px;padding-bottom:3px}
 .g2{display:grid;grid-template-columns:1fr 1fr;gap:12px 20px}
 .g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px 16px}
 .gfull{grid-column:1/-1}
 /* ── Health checkboxes ── */
 .chk-g{display:grid;grid-template-columns:1fr 1fr;gap:7px 20px;margin-bottom:12px}
-.chk-r{display:flex;align-items:center;gap:8px;font-size:14.5px}
+.chk-r{display:flex;align-items:center;gap:8px;font-size:16px}
 .chk{width:14px;height:14px;border:1.5px solid #888;display:inline-block;flex-shrink:0}
 /* ── Vaccinations ── */
 .vax-g{display:grid;grid-template-columns:1fr 1fr;gap:9px 20px;margin-top:7px}
-.vax{display:flex;align-items:baseline;gap:7px;font-size:14.5px}
+.vax{display:flex;align-items:baseline;gap:7px;font-size:16px}
 .vax-l{flex:1;border-bottom:1px solid #9AAABB}
 /* ── Notice ── */
-.notice{background:#FFF8E0;border-left:3px solid var(--gold);padding:10px 14px;margin:12px 0;font-size:14.5px}
+.notice{background:#FFF8E0;border-left:3px solid var(--gold);padding:10px 14px;margin:12px 0;font-size:16px}
 .notice strong{color:var(--navy);font-family:var(--fh)}
 /* ── Rules ── */
 .rules{margin:0 0 10px;padding:0;list-style:none}
-.rules li{padding:3px 0 3px 17px;font-size:13.5px;border-bottom:1px solid #EEF0F4;position:relative;line-height:1.5}
+.rules li{padding:5px 0 5px 17px;font-size:15px;border-bottom:1px solid #EEF0F4;position:relative;line-height:1.5}
 .rules li::before{content:"\25B8";color:var(--red);position:absolute;left:0;font-size:9px;top:8px}
 /* ── Tables ── */
-.tbl{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}
+.tbl{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:14.5px}
 .tbl th{background:var(--navy);color:#fff;padding:7px 9px;text-align:left;font-family:var(--fh);font-size:10px;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
 .tbl th.r{text-align:right}
-.tbl td{padding:6px 9px;border-bottom:1px solid var(--border)}
+.tbl td{padding:8px 10px;border-bottom:1px solid var(--border)}
 .tbl td.r{text-align:right;font-variant-numeric:tabular-nums}
 .tbl tr:nth-child(even) td{background:var(--light)}
 .tbl .tot td{background:#E8EEF8;font-family:var(--fh);font-weight:700;border-top:2px solid var(--navy)}
 .tbl .tot td.r{color:var(--red)}
 .tbl .sub td{background:#EDF1F8;font-family:var(--fh);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--navy);border-left:3px solid var(--red);padding:7px 9px}
 /* ── Bank table ── */
-.btbl{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:12px}
+.btbl{width:100%;border-collapse:collapse;font-size:14.5px;margin-bottom:12px}
 .btbl th{background:var(--navy);color:#fff;padding:7px 9px;font-family:var(--fh);font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.05em}
 .btbl td{padding:9px 9px;border:1px solid var(--border)}
-.btbl .bn{font-family:var(--fh);font-size:13px;font-weight:700;color:var(--navy)}
-.btbl .ba{font-family:"Courier New",monospace;font-size:13.5px;font-weight:700;letter-spacing:.03em}
+.btbl .bn{font-family:var(--fh);font-size:14.5px;font-weight:700;color:var(--navy)}
+.btbl .ba{font-family:"Courier New",monospace;font-size:15px;font-weight:700;letter-spacing:.03em}
 .btbl .bo{font-size:12px;color:var(--muted)}
 .bnb{font-size:12px;color:var(--red);font-style:italic;margin-top:6px}
 /* ── Agreement ── */
-.agree{border:1px solid var(--navy);padding:16px 18px;margin:12px 0;font-size:14.5px;line-height:1.7}
+.agree{border:1px solid var(--navy);padding:16px 18px;margin:12px 0;font-size:16px;line-height:1.7}
 .agree p{margin:0 0 10px}
 .agree p:last-child{margin-bottom:0}
 /* ── Signatures ── */
@@ -530,7 +530,7 @@ body{background:var(--bg-page);color:#1A1A1A;font-family:var(--fb);font-size:15p
 @media print{
   *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;color-adjust:exact!important}
   body{background:white!important;padding:0!important}
-  .a4{box-shadow:none!important;margin:0!important;width:100%!important;height:297mm;overflow:hidden;page-break-after:always;page-break-inside:avoid}
+  .a4{box-shadow:none!important;margin:0!important;width:100%!important;height:291mm;overflow:hidden;page-break-after:always;page-break-inside:avoid}
   .a4:last-child{page-break-after:avoid}
 }
 </style>
@@ -653,7 +653,7 @@ body{background:var(--bg-page);color:#1A1A1A;font-family:var(--fb);font-size:15p
     <div class="g2">
       <div>
         <div class="fg"><span class="fl">Mtihani wa Wanafunzi Wanaohamia &mdash; Kuanzia Tarehe</span><div class="fi"></div></div>
-        <p class="itxt" style="font-size:13px;">Gharama ya mitihani hiyo itakuwa TZS <strong>5,000/=</strong> tu.</p>
+        <p class="itxt" style="font-size:16px;">Gharama ya mitihani hiyo itakuwa TZS <strong>5,000/=</strong> tu.</p>
       </div>
       <div>
         <div class="fg"><span class="fl">Shule Itafunguliwa Rasmi (Wanafunzi wa Bweni)</span><div class="fi"></div></div>
