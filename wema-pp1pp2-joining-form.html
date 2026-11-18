@@ -434,25 +434,25 @@ if (typeof module != "undefined") {
 @page{size:A4;margin:3mm}
 body{background:#D0D3D8;color:#111;font-family:var(--fb);font-size:14px;line-height:1.55;margin:0;padding:0;}
 .a4{background:white;width:794px;max-width:100%;margin:0 auto 20px;height:1100px;overflow:hidden;page-break-after:always;page-break-inside:avoid;position:relative;display:flex;flex-direction:column;}
-.wm{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:530px;pointer-events:none;z-index:0;}
-.wm img{width:100%;height:auto;display:block;filter:grayscale(80%) opacity(0.22);}
-/* Page 1 header */
-.hdr{display:flex;align-items:flex-start;gap:10px;padding:12px 20px 8px;position:relative;z-index:1;}
-.hdr-logo{flex-shrink:0;width:102px;}
+.wm{position:absolute;top:38%;left:50%;transform:translate(-50%,-50%);width:530px;pointer-events:none;z-index:0;}
+.wm img{width:100%;height:auto;display:block;filter:grayscale(60%) opacity(0.18);}
+/* Page 1 header - white, balanced */
+.hdr{display:flex;align-items:center;gap:14px;padding:10px 18px;position:relative;z-index:1;}
+.hdr-logo{flex-shrink:0;width:108px;}
 .hdr-logo img{width:100%;height:auto;display:block;}
-.hdr-info{flex:1;text-align:center;padding-top:2px;}
-.hdr-name{font-family:var(--fh);font-size:21px;font-weight:700;color:var(--navy);text-transform:uppercase;line-height:1.15;letter-spacing:.01em;}
-.hdr-sub{font-family:var(--fh);font-size:11.5px;color:var(--red);font-style:italic;margin-top:3px;}
-.hdr-addr{font-size:12px;color:#333;margin-top:3px;line-height:1.45;}
-.hdr-tel{font-size:13px;font-weight:700;color:#111;margin-top:2px;}
-.hdr-email{font-size:11.5px;color:#333;margin-top:1px;}
-.hdr-right{flex-shrink:0;display:flex;flex-direction:column;align-items:flex-end;gap:5px;}
-.hdr-ref{text-align:right;}
-.hdr-ref-lbl{font-size:8.5px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;}
-.hdr-ref-val{font-family:var(--fh);font-size:13px;font-weight:700;color:var(--navy);}
-.photo-box{width:70px;height:88px;border:1.5px dashed #888;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#888;font-size:9px;text-align:center;gap:3px;}
-.photo-lbl{font-size:7.5px;color:#888;text-align:center;margin-top:2px;}
-.hdr-rule{border:none;border-top:2.5px solid var(--navy);margin:0 20px 0;}
+.hdr-info{flex:1;text-align:center;}
+.hdr-name{font-family:var(--fh);font-size:20px;font-weight:700;color:var(--navy);text-transform:uppercase;line-height:1.15;letter-spacing:.01em;}
+.hdr-sub{font-family:var(--fh);font-size:11px;color:var(--red);font-weight:700;text-transform:uppercase;margin-top:3px;letter-spacing:.03em;}
+.hdr-addr{font-size:11.5px;color:#333;margin-top:4px;line-height:1.45;}
+.hdr-tel{font-size:13px;font-weight:700;color:#111;margin-top:3px;}
+.hdr-email{font-size:11px;color:#555;margin-top:2px;}
+.hdr-ref-line{font-size:11px;color:#555;margin-top:4px;}
+.hdr-ref-line strong{color:var(--navy);font-weight:700;}
+.hdr-right{flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:3px;}
+.photo-box{width:82px;height:108px;border:1.5px dashed #888;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#888;font-size:9px;text-align:center;gap:3px;padding:4px;}
+.photo-txt{font-size:9px;color:#888;line-height:1.4;text-align:center;}
+.photo-lbl{font-size:7px;color:#999;text-align:center;text-transform:uppercase;letter-spacing:.04em;}
+.hdr-rule{border:none;border-top:2px solid var(--navy);margin:0;}
 .hdr-ttl{display:flex;align-items:center;justify-content:space-between;padding:5px 20px;border-bottom:1px solid var(--navy);position:relative;z-index:1;}
 .hdr-ttl-main{font-family:var(--fh);font-size:11px;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.04em;}
 .hdr-ttl-year{font-size:11px;color:#444;font-family:var(--fh);}
@@ -470,7 +470,7 @@ body{background:#D0D3D8;color:#111;font-family:var(--fb);font-size:14px;line-hei
 .itxt{font-size:14px;margin:0 0 7px;line-height:1.55;}
 /* Fields */
 .fg{display:flex;flex-direction:column;margin-bottom:6px;}
-.fl{font-size:10.5px;color:var(--muted);margin-bottom:2px;}
+.fl{font-size:10.5px;color:#222;font-weight:700;margin-bottom:2px;}
 .fi{border-bottom:1px solid #555;min-height:19px;}
 .g2{display:grid;grid-template-columns:1fr 1fr;gap:0 14px;}
 .g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 10px;}
@@ -490,7 +490,7 @@ body{background:#D0D3D8;color:#111;font-family:var(--fb);font-size:14px;line-hei
 .sgn{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 14px;margin-top:11px;}
 .sgn2{display:grid;grid-template-columns:1fr 1fr;gap:0 14px;margin-top:11px;}
 .sf{display:flex;flex-direction:column;}
-.sl{font-size:10px;color:var(--muted);margin-bottom:3px;}
+.sl{font-size:10px;color:#222;font-weight:700;margin-bottom:3px;}
 .ss{border-bottom:1px solid #555;min-height:22px;}
 /* Tables */
 .tbl{width:100%;border-collapse:collapse;font-size:12.5px;margin-bottom:7px;}
@@ -498,7 +498,7 @@ body{background:#D0D3D8;color:#111;font-family:var(--fb);font-size:14px;line-hei
 .tbl th.r,.tbl td.r{text-align:right;}
 .tbl td{padding:4px 7px;border:1px solid #BDC2C8;font-size:12.5px;}
 .tbl tr.tot td{font-weight:700;border-top:2px solid var(--navy);}
-.tbl tr.sub td{background:#E8ECF0;font-weight:700;font-size:11px;color:var(--navy);padding:3px 7px;border:1px solid #BDC2C8;}
+.tbl tr.sub td{background:#fff;font-weight:700;font-size:11px;color:var(--navy);padding:3px 7px;border:1px solid #BDC2C8;border-left:3px solid var(--navy);}
 .btbl{width:100%;border-collapse:collapse;margin-bottom:4px;font-size:12.5px;}
 .btbl th{background:var(--navy);color:white;font-size:11px;padding:5px 10px;text-align:left;font-family:var(--fh);}
 .btbl td{padding:5px 10px;border:1px solid #BDC2C8;}
@@ -529,19 +529,14 @@ body{background:#D0D3D8;color:#111;font-family:var(--fb);font-size:14px;line-hei
       <div class="hdr-addr">P.O.Box 283, Katoro &ndash; Geita, Tanzania</div>
       <div class="hdr-tel">Tel: +255 743 546 891 &nbsp;/&nbsp; +255 657 352 021 &nbsp;/&nbsp; +255 755 686 554</div>
       <div class="hdr-email">Email: contact@wemaschools.com &nbsp;&middot;&nbsp; wemaschools.com</div>
+      <div class="hdr-ref-line">Form Reference: <strong>WEMS/PP1&#8209;PP2/2027</strong></div>
     </div>
     <div class="hdr-right">
-      <div class="hdr-ref">
-        <div class="hdr-ref-lbl">Form Reference</div>
-        <div class="hdr-ref-val">WEMS/PP1-PP2/2027</div>
+      <div class="photo-box">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#9AB0CC" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <div class="photo-txt">PICHA YA<br>PASSPORT<br>HAPA</div>
       </div>
-      <div>
-        <div class="photo-box">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-          Picha ya<br>Passport
-        </div>
-        <div class="photo-lbl">Paste Photo Here</div>
-      </div>
+      <div class="photo-lbl">Paste Photo Here</div>
     </div>
   </div>
   <hr class="hdr-rule">
