@@ -1,3 +1,10 @@
 # Generated output files containing personal/private data — not for version control
 sms-chat.html
 MEMORANDUM_MEKINGAMA_UPDATED.pdf
+
+# Python virtual environments and cache
+env/
+venv/
+__pycache__/
+*.pyc
+*.pyo
